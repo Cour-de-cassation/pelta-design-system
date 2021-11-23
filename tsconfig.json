@@ -7,7 +7,8 @@
         "outDir": "dist",
         "baseUrl": ".",
         "strict": true,
-        "declaration": true
+        "declaration": true,
+        "jsx": "react",
     },
     "include": [
        "src"
