@@ -38,7 +38,7 @@ function Drawer(props: {
           </div>
           <div>
             <IconButton
-              hint={wordings.shared.cancel}
+              hint={wordings.cancel}
               onClick={props.onClose}
               iconName="close"
             />
