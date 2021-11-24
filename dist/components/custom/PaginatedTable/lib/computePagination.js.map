@@ -1,0 +1,1 @@
+{"version":3,"file":"computePagination.js","sourceRoot":"","sources":["../../../../../src/components/custom/PaginatedTable/lib/computePagination.ts"],"names":[],"mappings":";;;AAEA,SAAS,iBAAiB,CAAC,UAAkB,EAAE,IAAY;IACzD,MAAM,KAAK,GAAG,IAAI,GAAG,UAAU,CAAC;IAChC,MAAM,GAAG,GAAG,KAAK,GAAG,UAAU,CAAC;IAC/B,OAAO,EAAE,KAAK,EAAE,GAAG,EAAE,CAAC;AACxB,CAAC;AANQ,8CAAiB"}

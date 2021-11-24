@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { range } from "lodash";
-import { dateType } from "@label/core";
-import { customThemeType, useCustomTheme } from "../../../theme";
-import { rectPositionType } from "../../../../types";
+import {
+  customThemeType,
+  useCustomTheme,
+  rectPositionType,
+} from "../../../theme";
 import { Icon, Text } from "../../materialUI";
 import { TooltipMenu } from "../TooltipMenu";
 import {
@@ -11,9 +13,17 @@ import {
   getPreviousMonthDate,
 } from "./lib";
 import { createCalendarTable } from "./lib/createCalendarTable";
-import { wordings } from "src/wordings";
+import { wordings } from "../../../wordings";
 
 export { DatePickerTooltip };
+
+export type { dateType };
+
+type dateType = {
+  year: number;
+  month: number;
+  dayOfMonth: number;
+};
 
 const TOOLTIP_WIDTH = 300;
 

@@ -1,0 +1,1 @@
+{"version":3,"file":"computeNumberOfPages.js","sourceRoot":"","sources":["../../../../../src/components/custom/PaginatedTable/lib/computeNumberOfPages.ts"],"names":[],"mappings":";;;AAEA,SAAS,oBAAoB,CAAC,YAAoB,EAAE,UAAkB;IACpE,OAAO,IAAI,CAAC,KAAK,CAAC,YAAY,GAAG,UAAU,CAAC,GAAG,CAAC,YAAY,GAAG,UAAU,GAAG,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACzF,CAAC;AAJQ,oDAAoB"}

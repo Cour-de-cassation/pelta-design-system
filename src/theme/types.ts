@@ -1,4 +1,11 @@
-export type { colorType, constantColorType, displayModeType, shadeColorType };
+export type {
+  colorType,
+  constantColorType,
+  displayModeType,
+  shadeColorType,
+  positionType,
+  rectPositionType,
+};
 
 const shadeColors = [
   "blue",
@@ -30,3 +37,15 @@ type constantColorType = typeof constantColors[number];
 type shadeColorType = [typeof shadeColors[number], string];
 
 type colorType = constantColorType | shadeColorType;
+
+type positionType = {
+  x: number;
+  y: number;
+};
+
+type rectPositionType = {
+  top?: string;
+  bottom?: string;
+  left?: string;
+  right?: string;
+};

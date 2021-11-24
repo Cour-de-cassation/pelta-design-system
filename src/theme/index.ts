@@ -9,6 +9,8 @@ import {
   constantColorType,
   shadeColorType,
   displayModeType,
+  positionType,
+  rectPositionType,
 } from "./types";
 
 export {
@@ -28,4 +30,6 @@ export type {
   constantColorType,
   shadeColorType,
   displayModeType,
+  positionType,
+  rectPositionType,
 };
