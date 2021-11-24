@@ -8,12 +8,10 @@ export { ThemeProvider };
 
 const DEFAULT_DISPLAY_MODE = "darkMode";
 
-function ThemeProvider(props: {
-  children: ReactNode;
-  initialDisplayMode?: displayModeType;
-  storeDisplayMode: (displayMode: displayModeType) => void;
-}) {
-  const INITIAL_DISPLAY_MODE = props.initialDisplayMode || DEFAULT_DISPLAY_MODE;
+const DISPLAY_MODE_STORAGE_KEY = "PELTA_DISPLAY_MODE";
+
+function ThemeProvider(props: { children: ReactNode }) {
+  const INITIAL_DISPLAY_MODE = getInitialDisplayMode() || DEFAULT_DISPLAY_MODE;
   const [displayMode, setDisplayMode] =
     useState<displayModeType>(INITIAL_DISPLAY_MODE);
   const theme = buildMuiTheme(displayMode);
@@ -32,9 +30,14 @@ function ThemeProvider(props: {
   );
 
   function setAndStoreDisplayMode(displayMode: displayModeType) {
-    props.storeDisplayMode(displayMode);
-    localStorage.displayModeHandler.set(displayMode);
+    localStorage.setItem(DISPLAY_MODE_STORAGE_KEY, displayMode);
     setDisplayMode(displayMode);
+  }
+
+  function getInitialDisplayMode() {
+    return (localStorage.getItem(DISPLAY_MODE_STORAGE_KEY) || undefined) as
+      | displayModeType
+      | undefined;
   }
 
   function buildStyle() {

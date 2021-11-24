@@ -25,8 +25,9 @@ const core_1 = require("@material-ui/core");
 const buildMuiTheme_1 = require("./buildMuiTheme");
 const displayMode_1 = require("./displayMode");
 const DEFAULT_DISPLAY_MODE = "darkMode";
+const DISPLAY_MODE_STORAGE_KEY = "PELTA_DISPLAY_MODE";
 function ThemeProvider(props) {
-    const INITIAL_DISPLAY_MODE = props.initialDisplayMode || DEFAULT_DISPLAY_MODE;
+    const INITIAL_DISPLAY_MODE = getInitialDisplayMode() || DEFAULT_DISPLAY_MODE;
     const [displayMode, setDisplayMode] = (0, react_1.useState)(INITIAL_DISPLAY_MODE);
     const theme = (0, buildMuiTheme_1.buildMuiTheme)(displayMode);
     const displayModeContext = {
@@ -38,9 +39,11 @@ function ThemeProvider(props) {
         react_1.default.createElement(core_1.ThemeProvider, { theme: theme },
             react_1.default.createElement("div", { style: style }, props.children))));
     function setAndStoreDisplayMode(displayMode) {
-        props.storeDisplayMode(displayMode);
-        localStorage.displayModeHandler.set(displayMode);
+        localStorage.setItem(DISPLAY_MODE_STORAGE_KEY, displayMode);
         setDisplayMode(displayMode);
+    }
+    function getInitialDisplayMode() {
+        return (localStorage.getItem(DISPLAY_MODE_STORAGE_KEY) || undefined);
     }
     function buildStyle() {
         return {
