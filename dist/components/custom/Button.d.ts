@@ -1,7 +1,7 @@
 import { CSSProperties, ReactElement, ReactNode, MouseEvent } from "react";
 export { Button };
 export type { buttonColorType };
-declare type buttonColorType = "primary" | "warning" | "alert" | "default";
+declare type buttonColorType = "primary" | "warning" | "alert" | "default" | "success";
 declare function Button(props: {
     children?: ReactNode;
     color?: buttonColorType;

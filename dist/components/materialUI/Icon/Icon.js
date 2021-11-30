@@ -79,11 +79,12 @@ const materialIconMapping = {
     update: icons_1.UpdateRounded,
     waiting: icons_1.HourglassEmptyRounded,
     warning: icons_1.ReportProblemRounded,
-    web: icons_1.LanguageRounded,
+    web: icons_1.PublicRounded,
     work: icons_1.BusinessCenterRounded,
 };
 const svgIconMapping = {
     judge: svgIcons_1.Judge,
+    scissors: svgIcons_1.Scissors,
 };
 const iconMapping = Object.assign(Object.assign({}, materialIconMapping), svgIconMapping);
 function Icon(props) {

@@ -1,3 +1,4 @@
-import { Judge } from './Judge';
+import { Judge } from "./Judge";
+import { Scissors } from "./Scissors";
 
-export { Judge };
+export { Judge, Scissors };

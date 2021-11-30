@@ -12,7 +12,7 @@ export { Button };
 
 export type { buttonColorType };
 
-type buttonColorType = "primary" | "warning" | "alert" | "default";
+type buttonColorType = "primary" | "warning" | "alert" | "default" | "success";
 
 const BUTTON_SIZE = 40;
 

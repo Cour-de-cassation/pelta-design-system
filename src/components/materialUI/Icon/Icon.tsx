@@ -35,7 +35,7 @@ import {
   HomeRounded,
   HourglassEmptyRounded,
   HowToRegRounded,
-  LanguageRounded,
+  PublicRounded,
   Link,
   LinkOff,
   LocationCityRounded,
@@ -72,7 +72,7 @@ import {
   VpnKeyRounded,
 } from "@material-ui/icons";
 import { Tooltip } from "../Tooltip";
-import { Judge } from "./svgIcons";
+import { Judge, Scissors } from "./svgIcons";
 
 export { Icon };
 
@@ -149,12 +149,13 @@ const materialIconMapping = {
   update: UpdateRounded,
   waiting: HourglassEmptyRounded,
   warning: ReportProblemRounded,
-  web: LanguageRounded,
+  web: PublicRounded,
   work: BusinessCenterRounded,
 };
 
 const svgIconMapping = {
   judge: Judge,
+  scissors: Scissors,
 };
 
 const iconMapping = {

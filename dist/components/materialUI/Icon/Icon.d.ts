@@ -1,9 +1,10 @@
 import { CSSProperties } from "react";
-import { Judge } from "./svgIcons";
+import { Judge, Scissors } from "./svgIcons";
 export { Icon };
 export type { iconNameType };
 declare const iconMapping: {
     judge: typeof Judge;
+    scissors: typeof Scissors;
     addPerson: import("@material-ui/core/OverridableComponent").OverridableComponent<import("@material-ui/core").SvgIconTypeMap<{}, "svg">>;
     admin: import("@material-ui/core/OverridableComponent").OverridableComponent<import("@material-ui/core").SvgIconTypeMap<{}, "svg">>;
     arrowDown: import("@material-ui/core/OverridableComponent").OverridableComponent<import("@material-ui/core").SvgIconTypeMap<{}, "svg">>;
