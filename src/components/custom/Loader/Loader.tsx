@@ -16,6 +16,7 @@ function Loader(props: { size?: number }) {
         borderColor: "inherit",
         border: "2px solid",
         borderTop: "2px solid transparent",
+        borderRadius: "100%",
         width: `${size}px`,
         height: `${size}px`,
       },
