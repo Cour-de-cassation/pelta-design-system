@@ -32,4 +32,12 @@ declare const fr: {
         lightMode: string;
         title: string;
     };
+    loginForm: {
+        login: string;
+        email: string;
+        forgottenPassword: string;
+        password: string;
+        pleaseTryAgain: string;
+        wrongEmailOrPassword: string;
+    };
 };
