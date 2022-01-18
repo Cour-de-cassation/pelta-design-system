@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TooltipMenu = exports.TextInput = exports.Table = exports.RefreshButton = exports.PopUp = exports.PaginatedTable = exports.Loader = exports.LabelledDropdown = exports.IconDropdown = exports.IconButton = exports.Header = exports.FloatingTooltipMenu = exports.DropdownButton = exports.Dropdown = exports.DatePicker = exports.ConfirmationPopup = exports.ComponentsList = exports.CircleIcon = exports.ButtonWithIcon = exports.Button = void 0;
+exports.TooltipMenu = exports.TextInput = exports.Table = exports.RefreshButton = exports.PopUp = exports.PaginatedTable = exports.LoginForm = exports.Loader = exports.LabelledDropdown = exports.IconDropdown = exports.IconButton = exports.Header = exports.FloatingTooltipMenu = exports.DropdownButton = exports.Dropdown = exports.DatePicker = exports.ConfirmationPopup = exports.ComponentsList = exports.CircleIcon = exports.ButtonWithIcon = exports.Button = void 0;
 const Button_1 = require("./Button");
 Object.defineProperty(exports, "Button", { enumerable: true, get: function () { return Button_1.Button; } });
 const ButtonWithIcon_1 = require("./ButtonWithIcon");
@@ -29,6 +29,8 @@ const LabelledDropdown_1 = require("./LabelledDropdown");
 Object.defineProperty(exports, "LabelledDropdown", { enumerable: true, get: function () { return LabelledDropdown_1.LabelledDropdown; } });
 const Loader_1 = require("./Loader");
 Object.defineProperty(exports, "Loader", { enumerable: true, get: function () { return Loader_1.Loader; } });
+const LoginForm_1 = require("./LoginForm");
+Object.defineProperty(exports, "LoginForm", { enumerable: true, get: function () { return LoginForm_1.LoginForm; } });
 const PaginatedTable_1 = require("./PaginatedTable");
 Object.defineProperty(exports, "PaginatedTable", { enumerable: true, get: function () { return PaginatedTable_1.PaginatedTable; } });
 const PopUp_1 = require("./PopUp");
