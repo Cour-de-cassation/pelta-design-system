@@ -11,10 +11,6 @@
     "jsx": "react"
   },
   "include": [
-    "src", "src/**/*.css"
+    "src",
   ],
-  "exclude": [],
-  "hooks": [
-    "copy-files"
-  ]
 }
