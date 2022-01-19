@@ -1,16 +1,20 @@
 {
-    "compilerOptions": {
-        "module": "CommonJS",
-        "esModuleInterop": true,
-        "target": "es6",
-        "sourceMap": true,
-        "outDir": "dist",
-        "baseUrl": ".",
-        "strict": true,
-        "declaration": true,
-        "jsx": "react",
-    },
-    "include": [
-       "src"
-    ]
- }
+  "compilerOptions": {
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "strict": true,
+    "declaration": true,
+    "jsx": "react"
+  },
+  "include": [
+    "src", "src/**/*.css"
+  ],
+  "exclude": [],
+  "hooks": [
+    "copy-files"
+  ]
+}
