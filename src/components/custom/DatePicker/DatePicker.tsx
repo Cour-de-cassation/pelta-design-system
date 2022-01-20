@@ -7,6 +7,7 @@ import { convertTimestampToReadableDate } from "./lib";
 export { DatePicker };
 
 function DatePicker(props: {
+  isDisabled?: boolean;
   computeIsDateAvailable: (date: dateType) => boolean;
   onChange: (date: dateType) => void;
   value: Date | undefined;
@@ -28,13 +29,14 @@ function DatePicker(props: {
   return (
     <>
       <DropdownButton
+        isDisabled={props.isDisabled}
         isOpen={isDatePickerOpen}
         label={props.label}
         item={item}
         onClick={openToolTip}
         width={props.width}
       />
-      {!!tooltipMenuRectPosition && (
+      {!props.isDisabled && !!tooltipMenuRectPosition && (
         <DatePickerTooltip
           computeIsDateAvailable={props.computeIsDateAvailable}
           value={props.value}

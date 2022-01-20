@@ -3,6 +3,7 @@ import { rectPositionType } from "../../../theme";
 import { dateType } from "./DatePickerTooltip";
 export { DatePicker };
 declare function DatePicker(props: {
+    isDisabled?: boolean;
     computeIsDateAvailable: (date: dateType) => boolean;
     onChange: (date: dateType) => void;
     value: Date | undefined;

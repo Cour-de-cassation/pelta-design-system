@@ -34,8 +34,8 @@ function DatePicker(props) {
         }
         : undefined;
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement(DropdownButton_1.DropdownButton, { isOpen: isDatePickerOpen, label: props.label, item: item, onClick: openToolTip, width: props.width }),
-        !!tooltipMenuRectPosition && (react_1.default.createElement(DatePickerTooltip_1.DatePickerTooltip, { computeIsDateAvailable: props.computeIsDateAvailable, value: props.value, onChange: props.onChange, rectPosition: tooltipMenuRectPosition, onClose: closeToolTip }))));
+        react_1.default.createElement(DropdownButton_1.DropdownButton, { isDisabled: props.isDisabled, isOpen: isDatePickerOpen, label: props.label, item: item, onClick: openToolTip, width: props.width }),
+        !props.isDisabled && !!tooltipMenuRectPosition && (react_1.default.createElement(DatePickerTooltip_1.DatePickerTooltip, { computeIsDateAvailable: props.computeIsDateAvailable, value: props.value, onChange: props.onChange, rectPosition: tooltipMenuRectPosition, onClose: closeToolTip }))));
     function openToolTip(event) {
         const buttonRect = event.currentTarget.getBoundingClientRect();
         const left = props.parentRectPosition && props.parentRectPosition.left
