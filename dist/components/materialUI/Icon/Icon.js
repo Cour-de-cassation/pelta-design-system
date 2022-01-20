@@ -23,6 +23,7 @@ const materialIconMapping = {
     cake: icons_1.CakeRounded,
     car: icons_1.DirectionsCarRounded,
     check: icons_1.DoneRounded,
+    checkBox: icons_1.CheckBoxRounded,
     child: icons_1.ChildCareRounded,
     city: icons_1.LocationCityRounded,
     clock: icons_1.AlarmOnRounded,
@@ -33,6 +34,7 @@ const materialIconMapping = {
     deleteOutline: icons_1.DeleteOutlineRounded,
     discussion: icons_1.QuestionAnswerRounded,
     doubleArrow: icons_1.SettingsEthernetRounded,
+    doubleCheck: icons_1.DoneAllRounded,
     edit: icons_1.EditRounded,
     edited: icons_1.BorderColorRounded,
     email: icons_1.EmailRounded,
@@ -84,6 +86,7 @@ const materialIconMapping = {
 };
 const svgIconMapping = {
     judge: svgIcons_1.Judge,
+    meditation: svgIcons_1.Meditation,
     scissors: svgIcons_1.Scissors,
 };
 const iconMapping = Object.assign(Object.assign({}, materialIconMapping), svgIconMapping);

@@ -13,7 +13,7 @@ const LABELLED_DROPDOWN_BORDER_THICKNESS = 2;
 function DropdownButton(props) {
     const theme = (0, theme_1.useCustomTheme)();
     const style = buildStyle(theme);
-    return (react_1.default.createElement(Button_1.Button, { disabledHover: true, onClick: props.onClick, style: style.dropdown },
+    return (react_1.default.createElement(Button_1.Button, { disabledHover: true, disabled: props.isDisabled, onClick: props.onClick, style: style.dropdown },
         react_1.default.createElement("div", { style: style.dropdownContent },
             react_1.default.createElement("div", { style: style.dropdownText }, props.item
                 ? buildDropdownLabel(props.item.text, props.item.icon, true)
