@@ -44,6 +44,7 @@ const materialIconMapping = {
     find: icons_1.FindInPageRounded,
     forbidden: icons_1.BlockRounded,
     heart: icons_1.FavoriteRounded,
+    help: icons_1.HelpOutline,
     home: icons_1.HomeRounded,
     human: icons_1.AccessibilityNewRounded,
     key: icons_1.VpnKeyRounded,
