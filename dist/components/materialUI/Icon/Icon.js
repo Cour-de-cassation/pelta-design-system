@@ -73,6 +73,7 @@ const materialIconMapping = {
     search: icons_1.SearchRounded,
     send: icons_1.SendRounded,
     settings: icons_1.SettingsRounded,
+    statistics: icons_1.BarChart,
     stop: icons_1.BlockRounded,
     store: icons_1.StoreRounded,
     turnRight: icons_1.SubdirectoryArrowRightRounded,
