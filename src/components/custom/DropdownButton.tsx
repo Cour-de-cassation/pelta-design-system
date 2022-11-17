@@ -7,6 +7,7 @@ import { ComponentsList } from "./ComponentsList";
 export { DropdownButton };
 
 const LABELLED_DROPDOWN_BORDER_THICKNESS = 2;
+const LABELLED_DROPDOWN_HEIGHT = 35;
 
 function DropdownButton<T extends string>(props: {
   error?: boolean;
@@ -27,6 +28,7 @@ function DropdownButton<T extends string>(props: {
       disabled={props.isDisabled}
       onClick={props.onClick}
       style={style.dropdown}
+      height={LABELLED_DROPDOWN_HEIGHT}
     >
       <div style={style.dropdownContent}>
         <div style={style.dropdownText}>

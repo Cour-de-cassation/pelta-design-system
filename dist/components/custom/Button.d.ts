@@ -7,6 +7,7 @@ declare function Button(props: {
     color?: buttonColorType;
     disabled?: boolean;
     disabledHover?: boolean;
+    height?: number;
     hint?: string;
     onClick?: (event: MouseEvent) => void;
     style?: CSSProperties;

@@ -37,6 +37,7 @@ function Button(props) {
         return (react_1.default.createElement("button", { onClick: onClick, onMouseEnter: () => setIsHovered(true), onMouseLeave: () => setIsHovered(false), style: style, type: props.type }, props.children));
     }
     function buildButtonStyles(theme) {
+        var _a;
         const color = props.color || "default";
         const opacity = props.disabled ? 0.2 : 1;
         const cursor = props.disabled ? "default" : "pointer";
@@ -46,7 +47,7 @@ function Button(props) {
                 color: theme.colors[color].hoveredTextColor,
             }
             : undefined;
-        return Object.assign({ borderRadius: theme.shape.borderRadius.m, backgroundColor: theme.colors[color].background, margin: 0, cursor, display: "flex", justifyContent: "center", alignItems: "center", opacity, border: "none", color: "inherit", height: `${BUTTON_SIZE}px` }, hoveredStyles);
+        return Object.assign({ borderRadius: theme.shape.borderRadius.m, backgroundColor: theme.colors[color].background, margin: 0, cursor, display: "flex", justifyContent: "center", alignItems: "center", opacity, border: "none", color: "inherit", height: `${(_a = props.height) !== null && _a !== void 0 ? _a : BUTTON_SIZE}px` }, hoveredStyles);
     }
     function onClick(event) {
         event.stopPropagation();

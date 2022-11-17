@@ -21,6 +21,7 @@ function Button(props: {
   color?: buttonColorType;
   disabled?: boolean;
   disabledHover?: boolean;
+  height?: number;
   hint?: string;
   onClick?: (event: MouseEvent) => void;
   style?: CSSProperties;
@@ -81,7 +82,7 @@ function Button(props: {
       opacity,
       border: "none",
       color: "inherit",
-      height: `${BUTTON_SIZE}px`,
+      height: `${props.height ?? BUTTON_SIZE}px`,
       ...hoveredStyles,
     };
   }

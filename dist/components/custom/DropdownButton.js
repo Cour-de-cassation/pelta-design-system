@@ -10,10 +10,11 @@ const materialUI_1 = require("../materialUI");
 const Button_1 = require("./Button");
 const ComponentsList_1 = require("./ComponentsList");
 const LABELLED_DROPDOWN_BORDER_THICKNESS = 2;
+const LABELLED_DROPDOWN_HEIGHT = 35;
 function DropdownButton(props) {
     const theme = (0, theme_1.useCustomTheme)();
     const style = buildStyle(theme);
-    return (react_1.default.createElement(Button_1.Button, { disabledHover: true, disabled: props.isDisabled, onClick: props.onClick, style: style.dropdown },
+    return (react_1.default.createElement(Button_1.Button, { disabledHover: true, disabled: props.isDisabled, onClick: props.onClick, style: style.dropdown, height: LABELLED_DROPDOWN_HEIGHT },
         react_1.default.createElement("div", { style: style.dropdownContent },
             react_1.default.createElement("div", { style: style.dropdownText }, props.item
                 ? buildDropdownLabel(props.item.text, props.item.icon, true)
