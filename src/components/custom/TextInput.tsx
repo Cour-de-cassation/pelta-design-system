@@ -6,11 +6,12 @@ export { TextInput };
 function TextInput(props: {
   name: string;
   placeholder?: string;
+  alignRight?: boolean;
   value: string;
   onChange: (value: string) => void;
 }): ReactElement {
   const theme = useCustomTheme();
-  const styles = buildStyles(theme);
+  const styles = buildStyles(theme, props.alignRight ?? false);
 
   return (
     <input
@@ -27,7 +28,7 @@ function TextInput(props: {
   }
 }
 
-function buildStyles(theme: customThemeType) {
+function buildStyles(theme: customThemeType, alignRight: boolean) {
   return {
     input: {
       width: "100%",
@@ -37,7 +38,7 @@ function buildStyles(theme: customThemeType) {
       border: "none",
       color: theme.colors.line.level1,
       borderBottom: `${theme.colors.line.level2} 2px solid`,
-      textAlign: "right",
+      textAlign: alignRight ? "right" : "left",
       ...typography.body1.normal,
     },
   } as const;
