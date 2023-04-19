@@ -27,7 +27,7 @@ const displayMode_1 = require("./displayMode");
 const DEFAULT_DISPLAY_MODE = "darkMode";
 const DISPLAY_MODE_STORAGE_KEY = "PELTA_DISPLAY_MODE";
 function ThemeProvider(props) {
-    const INITIAL_DISPLAY_MODE = getInitialDisplayMode() || DEFAULT_DISPLAY_MODE;
+    const INITIAL_DISPLAY_MODE = getInitialDisplayMode() || props.defaultDisplayMode || DEFAULT_DISPLAY_MODE;
     const [displayMode, setDisplayMode] = (0, react_1.useState)(INITIAL_DISPLAY_MODE);
     const theme = (0, buildMuiTheme_1.buildMuiTheme)(displayMode);
     const displayModeContext = {
