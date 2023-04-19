@@ -31,6 +31,8 @@ function TextInput(props: {
 function buildStyles(theme: customThemeType, alignRight: boolean) {
   return {
     input: {
+      width: "100%",
+      boxSizing: "border-box",
       padding: theme.spacing,
       backgroundColor: "transparent",
       border: "none",
