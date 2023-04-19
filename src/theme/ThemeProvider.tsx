@@ -10,8 +10,8 @@ const DEFAULT_DISPLAY_MODE = "darkMode";
 
 const DISPLAY_MODE_STORAGE_KEY = "PELTA_DISPLAY_MODE";
 
-function ThemeProvider(props: { children: ReactNode }) {
-  const INITIAL_DISPLAY_MODE = getInitialDisplayMode() || DEFAULT_DISPLAY_MODE;
+function ThemeProvider(props: { defaultDisplayMode?: displayModeType, children: ReactNode }) {
+  const INITIAL_DISPLAY_MODE = getInitialDisplayMode() || props.defaultDisplayMode || DEFAULT_DISPLAY_MODE;
   const [displayMode, setDisplayMode] =
     useState<displayModeType>(INITIAL_DISPLAY_MODE);
   const theme = buildMuiTheme(displayMode);
