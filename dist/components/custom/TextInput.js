@@ -19,5 +19,6 @@ exports.TextInput = TextInput;
 function buildStyles(theme, alignRight) {
     return {
         input: Object.assign({ width: "100%", boxSizing: "border-box", padding: theme.spacing, backgroundColor: "transparent", border: "none", color: theme.colors.line.level1, borderBottom: `${theme.colors.line.level2} 2px solid`, textAlign: "right" }, theme_1.typography.body1.normal),
+    };
 }
 //# sourceMappingURL=TextInput.js.map
