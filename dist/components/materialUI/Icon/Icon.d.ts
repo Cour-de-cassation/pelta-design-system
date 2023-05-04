@@ -83,7 +83,7 @@ declare const iconMapping: {
     web: import("@material-ui/core/OverridableComponent").OverridableComponent<import("@material-ui/core").SvgIconTypeMap<{}, "svg">>;
     work: import("@material-ui/core/OverridableComponent").OverridableComponent<import("@material-ui/core").SvgIconTypeMap<{}, "svg">>;
 };
-declare type iconNameType = keyof typeof iconMapping;
+type iconNameType = keyof typeof iconMapping;
 declare function Icon(props: {
     iconName: iconNameType;
     hint?: string;

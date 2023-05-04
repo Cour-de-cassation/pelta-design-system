@@ -58,4 +58,4 @@ declare const typography: {
         };
     };
 };
-declare type typographyType = keyof typeof typography;
+type typographyType = keyof typeof typography;

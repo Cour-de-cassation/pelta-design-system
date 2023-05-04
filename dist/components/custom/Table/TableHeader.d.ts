@@ -1,9 +1,9 @@
 import { CSSProperties } from "react";
 export { TableHeader, DEFAULT_ORDER_DIRECTION };
 export type { orderDirectionType };
-declare type orderDirectionType = "asc" | "desc";
+type orderDirectionType = "asc" | "desc";
 declare const DEFAULT_ORDER_DIRECTION = "asc";
-declare type cellType<orderByPropertyT> = {
+type cellType<orderByPropertyT> = {
     id: orderByPropertyT;
     title: string;
     tooltipText?: string;

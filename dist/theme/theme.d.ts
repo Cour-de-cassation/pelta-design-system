@@ -83,7 +83,7 @@ declare const commonTheme: {
         };
     };
 };
-declare type customThemeType = typeof commonTheme & {
+type customThemeType = typeof commonTheme & {
     colors: customColorsThemeType;
 };
 declare function useCustomTheme(): {
