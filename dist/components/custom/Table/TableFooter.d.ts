@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 export { TableFooter };
 export type { footerCellType };
-declare type footerCellType = {
+type footerCellType = {
     id: string;
     content: ReactElement;
 };

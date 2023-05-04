@@ -1,6 +1,6 @@
 import { colorType, shadeColorType } from "../types";
 export type { customColorsType };
-declare type customColorsType = {
+type customColorsType = {
     alert: shadeColorType;
     background: colorType;
     badge: {

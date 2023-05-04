@@ -2,7 +2,7 @@
 import { rectPositionType } from "../../../theme";
 export { DatePickerTooltip };
 export type { dateType };
-declare type dateType = {
+type dateType = {
     year: number;
     month: number;
     dayOfMonth: number;

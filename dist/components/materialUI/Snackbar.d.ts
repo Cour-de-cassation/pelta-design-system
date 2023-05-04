@@ -1,7 +1,7 @@
 /// <reference types="react" />
 export { Snackbar };
 export type { snackbarVariantType };
-declare type snackbarVariantType = "success" | "alert" | "info";
+type snackbarVariantType = "success" | "alert" | "info";
 declare function Snackbar(props: {
     variant: snackbarVariantType;
     text: string;

@@ -5,7 +5,7 @@ import { tableRowFieldType } from "./TableBody";
 import { footerCellType } from "./TableFooter";
 export { Table };
 export type { optionItemType, orderDirectionType, tableRowFieldType };
-declare type optionItemType = {
+type optionItemType = {
     kind: "text";
     text: string;
     onClick: () => void;

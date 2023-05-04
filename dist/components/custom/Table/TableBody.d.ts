@@ -3,7 +3,7 @@ import { optionItemType } from "./Table";
 import { orderDirectionType } from "./TableHeader";
 export { TableBody };
 export type { tableRowFieldType };
-declare type tableRowFieldType<InputT, orderByPropertyT = string> = {
+type tableRowFieldType<InputT, orderByPropertyT = string> = {
     id: orderByPropertyT;
     title: string;
     tooltipText?: string;

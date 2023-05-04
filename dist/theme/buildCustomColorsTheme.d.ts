@@ -1,7 +1,7 @@
 import { displayModeType } from "./types";
 export { buildCustomColorsTheme };
 export type { customColorsThemeType };
-declare type customColorsThemeType = ReturnType<typeof buildCustomColorsTheme>;
+type customColorsThemeType = ReturnType<typeof buildCustomColorsTheme>;
 declare function buildCustomColorsTheme(displayMode: displayModeType): {
     alert: {
         background: string;
