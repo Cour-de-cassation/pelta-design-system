@@ -1,50 +1,30 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getShadeColor = exports.getColor = exports.emphasizeShadeColor = void 0;
-const blue_1 = __importDefault(require("@material-ui/core/colors/blue"));
-const blueGrey_1 = __importDefault(require("@material-ui/core/colors/blueGrey"));
-const brown_1 = __importDefault(require("@material-ui/core/colors/brown"));
-const cyan_1 = __importDefault(require("@material-ui/core/colors/cyan"));
-const deepOrange_1 = __importDefault(require("@material-ui/core/colors/deepOrange"));
-const deepPurple_1 = __importDefault(require("@material-ui/core/colors/deepPurple"));
-const green_1 = __importDefault(require("@material-ui/core/colors/green"));
-const grey_1 = __importDefault(require("@material-ui/core/colors/grey"));
-const indigo_1 = __importDefault(require("@material-ui/core/colors/indigo"));
-const lightBlue_1 = __importDefault(require("@material-ui/core/colors/lightBlue"));
-const lightGreen_1 = __importDefault(require("@material-ui/core/colors/lightGreen"));
-const lime_1 = __importDefault(require("@material-ui/core/colors/lime"));
-const orange_1 = __importDefault(require("@material-ui/core/colors/orange"));
-const pink_1 = __importDefault(require("@material-ui/core/colors/pink"));
-const purple_1 = __importDefault(require("@material-ui/core/colors/purple"));
-const red_1 = __importDefault(require("@material-ui/core/colors/red"));
-const teal_1 = __importDefault(require("@material-ui/core/colors/teal"));
-const yellow_1 = __importDefault(require("@material-ui/core/colors/yellow"));
+const colors_1 = require("@mui/material/colors");
 const COLORS = {
     black: "#000000",
     white: "#FFFFFF",
 };
 const shadeColors = {
-    blue: blue_1.default,
-    blueGrey: blueGrey_1.default,
-    brown: brown_1.default,
-    cyan: cyan_1.default,
-    deepOrange: deepOrange_1.default,
-    deepPurple: deepPurple_1.default,
-    green: green_1.default,
-    grey: grey_1.default,
-    indigo: indigo_1.default,
-    lightBlue: lightBlue_1.default,
-    lightGreen: lightGreen_1.default,
-    lime: lime_1.default,
-    orange: orange_1.default,
-    pink: pink_1.default,
-    purple: purple_1.default,
-    red: red_1.default,
-    teal: teal_1.default,
-    yellow: yellow_1.default,
+    blue: colors_1.blue,
+    blueGrey: colors_1.blueGrey,
+    brown: colors_1.brown,
+    cyan: colors_1.cyan,
+    deepOrange: colors_1.deepOrange,
+    deepPurple: colors_1.deepPurple,
+    green: colors_1.green,
+    grey: colors_1.grey,
+    indigo: colors_1.indigo,
+    lightBlue: colors_1.lightBlue,
+    lightGreen: colors_1.lightGreen,
+    lime: colors_1.lime,
+    orange: colors_1.orange,
+    pink: colors_1.pink,
+    purple: colors_1.purple,
+    red: colors_1.red,
+    teal: colors_1.teal,
+    yellow: colors_1.yellow,
 };
 function emphasizeShadeColor(color, displayMode) {
     if (typeof color === "string") {

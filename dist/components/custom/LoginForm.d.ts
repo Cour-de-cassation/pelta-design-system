@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export { LoginForm };
 declare function LoginForm(props: {
     handleSubmit: ({ email, password }: {

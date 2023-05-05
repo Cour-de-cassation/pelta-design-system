@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Snackbar = void 0;
 const react_1 = __importDefault(require("react"));
-const core_1 = require("@material-ui/core");
+const material_1 = require("@mui/material");
 const theme_1 = require("../../theme");
 const Text_1 = require("./Text");
 const Icon_1 = require("./Icon");
@@ -14,7 +14,7 @@ const MAX_WIDTH = 400;
 function Snackbar(props) {
     const theme = (0, theme_1.useCustomTheme)();
     const styles = buildStyles(theme, props.variant);
-    return (react_1.default.createElement(core_1.Snackbar, { open: props.isOpen, onClose: props.onClose, autoHideDuration: props.autoHide ? DELAY_SHOW : undefined },
+    return (react_1.default.createElement(material_1.Snackbar, { open: props.isOpen, onClose: props.onClose, autoHideDuration: props.autoHide ? DELAY_SHOW : undefined },
         react_1.default.createElement("div", { style: styles.container },
             react_1.default.createElement(Text_1.Text, { style: styles.text }, props.text),
             !props.autoHide && (react_1.default.createElement("div", { style: styles.iconContainer, onClick: props.onClose },

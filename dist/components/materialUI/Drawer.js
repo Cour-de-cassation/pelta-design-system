@@ -5,7 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Drawer = void 0;
 const react_1 = __importDefault(require("react"));
-const core_1 = require("@material-ui/core");
+const material_1 = require("@mui/material");
+const styles_1 = require("@mui/styles");
 const theme_1 = require("../../theme");
 const wordings_1 = require("../../wordings");
 const __1 = require("..");
@@ -14,7 +15,7 @@ function Drawer(props) {
     const theme = (0, theme_1.useCustomTheme)();
     const styles = buildStyles();
     const classes = buildClasses(theme);
-    return (react_1.default.createElement(core_1.Drawer, { style: styles.drawer, classes: classes, anchor: "right", open: props.isOpen, onClose: props.onClose },
+    return (react_1.default.createElement(material_1.Drawer, { style: styles.drawer, classes: classes, anchor: "right", open: props.isOpen, onClose: props.onClose },
         react_1.default.createElement("div", { style: styles.container },
             react_1.default.createElement("div", { style: styles.header },
                 react_1.default.createElement("div", null,
@@ -55,7 +56,7 @@ function Drawer(props) {
         };
     }
     function buildClasses(theme) {
-        return (0, core_1.makeStyles)({
+        return (0, styles_1.makeStyles)({
             paper: {
                 boxShadow: theme.boxShadow.minor.out,
                 marginTop: theme_1.heights.header,

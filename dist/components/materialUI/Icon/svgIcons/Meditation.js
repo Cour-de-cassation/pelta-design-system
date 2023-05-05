@@ -5,11 +5,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Meditation = void 0;
 const react_1 = __importDefault(require("react"));
-const core_1 = require("@material-ui/core");
+const material_1 = require("@mui/material");
 const DEFAULT_SIZE = 24;
 function Meditation(props) {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
-    return (react_1.default.createElement(core_1.SvgIcon, { style: props.style },
+    return (react_1.default.createElement(material_1.SvgIcon, { style: props.style },
         react_1.default.createElement("svg", { width: ((_a = props.style) === null || _a === void 0 ? void 0 : _a.width) || DEFAULT_SIZE, height: ((_b = props.style) === null || _b === void 0 ? void 0 : _b.height) || DEFAULT_SIZE, viewBox: `0 0 ${((_c = props.style) === null || _c === void 0 ? void 0 : _c.height) || DEFAULT_SIZE} ${((_d = props.style) === null || _d === void 0 ? void 0 : _d.width) || DEFAULT_SIZE}`, fill: "none", xmlns: "http://www.w3.org/2000/svg" },
             react_1.default.createElement("g", { clipPath: "url(#clip0_3875:24854)" },
                 react_1.default.createElement("path", { d: "M14.6324 2.94054C14.6324 4.56649 13.3178 6.91892 11.6919 6.91892C10.0659 6.91892 8.75134 4.56649 8.75134 2.94054C8.75134 1.31459 10.0659 0 11.6919 0C13.3178 0 14.6324 1.31459 14.6324 2.94054Z", fill: (_e = props.style) === null || _e === void 0 ? void 0 : _e.color }),

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { iconNameType } from "../materialUI";
 export { CircleIcon };
 declare function CircleIcon(props: {

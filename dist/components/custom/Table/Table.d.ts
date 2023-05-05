@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { iconNameType } from "../../materialUI";
 import { orderDirectionType } from "./TableHeader";
 import { tableRowFieldType } from "./TableBody";

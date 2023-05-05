@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export { ConfirmationPopup };
 declare function ConfirmationPopup(props: {
     text: string;

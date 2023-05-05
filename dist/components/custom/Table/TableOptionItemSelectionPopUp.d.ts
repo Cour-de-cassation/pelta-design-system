@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export { TableOptionItemSelectionPopUp };
 declare function TableOptionItemSelectionPopUp(props: {
     description: string;

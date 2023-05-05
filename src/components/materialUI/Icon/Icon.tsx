@@ -74,7 +74,7 @@ import {
   UpdateRounded,
   VisibilityRounded,
   VpnKeyRounded,
-} from "@material-ui/icons";
+} from "@mui/icons-material";
 import { Tooltip } from "../Tooltip";
 import { Judge, Scissors, Meditation } from "./svgIcons";
 

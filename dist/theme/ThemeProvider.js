@@ -25,7 +25,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ThemeProvider = void 0;
 const react_1 = __importStar(require("react"));
-const core_1 = require("@material-ui/core");
+const material_1 = require("@mui/material");
 const buildMuiTheme_1 = require("./buildMuiTheme");
 const displayMode_1 = require("./displayMode");
 const DEFAULT_DISPLAY_MODE = "darkMode";
@@ -40,7 +40,7 @@ function ThemeProvider(props) {
     };
     const style = buildStyle();
     return (react_1.default.createElement(displayMode_1.DisplayModeContext.Provider, { value: displayModeContext },
-        react_1.default.createElement(core_1.ThemeProvider, { theme: theme },
+        react_1.default.createElement(material_1.ThemeProvider, { theme: theme },
             react_1.default.createElement("div", { style: style }, props.children))));
     function setAndStoreDisplayMode(displayMode) {
         localStorage.setItem(DISPLAY_MODE_STORAGE_KEY, displayMode);

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export { Snackbar };
 export type { snackbarVariantType };
 type snackbarVariantType = "success" | "alert" | "info";

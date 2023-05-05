@@ -5,14 +5,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SwitchButton = void 0;
 const react_1 = __importDefault(require("react"));
-const core_1 = require("@material-ui/core");
+const material_1 = require("@mui/material");
+const styles_1 = require("@mui/styles");
 const theme_1 = require("../../theme");
 function SwitchButton(props) {
     const theme = (0, theme_1.useCustomTheme)();
     const classes = buildSwitchButtonClasses(theme);
-    return (react_1.default.createElement(core_1.Switch, { disabled: props.disabled, checked: props.checked, classes: Object.assign({}, classes), color: props.color, onChange: props.onChange }));
+    return (react_1.default.createElement(material_1.Switch, { disabled: props.disabled, checked: props.checked, classes: Object.assign({}, classes), color: props.color, onChange: props.onChange }));
     function buildSwitchButtonClasses(theme) {
-        return (0, core_1.makeStyles)({
+        return (0, styles_1.makeStyles)({
             root: {
                 width: 50,
                 height: 30,

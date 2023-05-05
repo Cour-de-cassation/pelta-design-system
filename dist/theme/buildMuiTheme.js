@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.buildMuiTheme = void 0;
-const core_1 = require("@material-ui/core");
+const styles_1 = require("@mui/material/styles");
 const theme_1 = require("./theme");
 function buildMuiTheme(displayMode) {
     const customTheme = (0, theme_1.buildCustomTheme)(displayMode);
-    return (0, core_1.createTheme)({
+    return (0, styles_1.createTheme)({
         shape: { borderRadius: customTheme.shape.borderRadius.xxs },
         spacing: customTheme.spacing,
         typography: customTheme.typography,
