@@ -1,5 +1,5 @@
 import React, { MouseEvent, ReactElement, ReactNode } from "react";
-import { makeStyles, Menu as MUMenu, MenuItem } from "@material-ui/core";
+import { Menu as MUMenu, MenuItem } from "@material-ui/core";
 import { customThemeType, useCustomTheme } from "../../theme";
 
 export { Menu };
@@ -13,8 +13,6 @@ function Menu<T extends string>(props: {
   width?: number;
 }): ReactElement {
   const theme = useCustomTheme();
-  const menuClasses = buildMenuClasses(theme);
-  const menuItemClasses = buildMenuItemClasses(theme);
   const dropdownMenuConfiguration = {
     anchorOrigin: { horizontal: "left", vertical: props.dropdownPosition },
     transformOrigin: {
@@ -27,7 +25,6 @@ function Menu<T extends string>(props: {
     <MUMenu
       anchorEl={props.anchorElement}
       anchorOrigin={dropdownMenuConfiguration?.anchorOrigin}
-      classes={menuClasses}
       getContentAnchorEl={null} // To prevent materialUI to log cryptic error
       onClose={onClose}
       open={isOpen()}
@@ -36,7 +33,6 @@ function Menu<T extends string>(props: {
       {props.items.map(({ value, element, isDisabled }, ind) => (
         <MenuItem
           disabled={isDisabled}
-          classes={menuItemClasses}
           key={ind}
           value={value}
           onClick={(event: MouseEvent) => handleSelection(event, value)}
@@ -46,30 +42,6 @@ function Menu<T extends string>(props: {
       ))}
     </MUMenu>
   );
-
-  function buildMenuClasses(theme: customThemeType) {
-    return makeStyles({
-      paper: {
-        backgroundColor: theme.colors.background,
-        maxHeight: "300px",
-        width: `${props.width}px`,
-      },
-    })();
-  }
-
-  function buildMenuItemClasses(theme: customThemeType) {
-    return makeStyles({
-      root: {
-        borderRadius: theme.shape.borderRadius.m,
-        margin: theme.spacing,
-        "&:hover": {
-          background: theme.colors.default.hoveredBackground,
-          borderRadius: theme.shape.borderRadius.m,
-          color: theme.colors.default.hoveredTextColor,
-        },
-      },
-    })();
-  }
 
   function isOpen() {
     return !!props.anchorElement;

@@ -13,8 +13,7 @@ const constants_1 = require("./constants");
 function Drawer(props) {
     const theme = (0, theme_1.useCustomTheme)();
     const styles = buildStyles();
-    const classes = buildClasses(theme);
-    return (react_1.default.createElement(core_1.Drawer, { style: styles.drawer, classes: classes, anchor: "right", open: props.isOpen, onClose: props.onClose },
+    return (react_1.default.createElement(core_1.Drawer, { style: styles.drawer, anchor: "right", open: props.isOpen, onClose: props.onClose },
         react_1.default.createElement("div", { style: styles.container },
             react_1.default.createElement("div", { style: styles.header },
                 react_1.default.createElement("div", null,
@@ -53,15 +52,6 @@ function Drawer(props) {
                 width: "100%",
             },
         };
-    }
-    function buildClasses(theme) {
-        return (0, core_1.makeStyles)({
-            paper: {
-                boxShadow: theme.boxShadow.minor.out,
-                marginTop: theme_1.heights.header,
-                height: theme_1.heights.adminPanel,
-            },
-        })();
     }
 }
 exports.Drawer = Drawer;

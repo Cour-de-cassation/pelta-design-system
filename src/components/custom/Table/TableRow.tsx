@@ -57,7 +57,7 @@ function TableRow<InputT>(props: {
       <tr
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        onClick={!!onRowClick ? onRowClick : undefined}
+        onClick={onRowClick ? onRowClick : undefined}
         style={styles.row}
       >
         {formattedRow.map(({ content, style }) => (
@@ -128,7 +128,7 @@ function TableRow<InputT>(props: {
   }
 
   function buildStyles(theme: customThemeType) {
-    const cursor = !!props.onRowClick ? "pointer" : "default";
+    const cursor = props.onRowClick ? "pointer" : "default";
     const backgroundColor = isHovered
       ? theme.colors.default.background
       : undefined;

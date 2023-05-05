@@ -10,23 +10,16 @@ const constants_1 = require("./constants");
 const theme_1 = require("../../theme");
 function MenuBar(props) {
     const theme = (0, theme_1.useCustomTheme)();
-    const styles = buildStyles();
-    const classes = buildClasses(theme, props.isElevated);
-    return (react_1.default.createElement(core_1.AppBar, { classes: classes, position: "relative", style: styles.appBar, color: props.color }, props.children));
-    function buildStyles() {
+    const styles = buildStyles(props.isElevated);
+    return (react_1.default.createElement(core_1.AppBar, { position: "relative", style: styles.appBar, color: props.color }, props.children));
+    function buildStyles(isElevated) {
         return {
             appBar: {
                 zIndex: constants_1.zIndices.menuBar,
+                boxShadow: isElevated ? theme.boxShadow.major.out : "none",
             },
         };
     }
 }
 exports.MenuBar = MenuBar;
-function buildClasses(theme, isElevated) {
-    return (0, core_1.makeStyles)({
-        root: {
-            boxShadow: isElevated ? theme.boxShadow.major.out : "none",
-        },
-    })();
-}
 //# sourceMappingURL=MenuBar.js.map

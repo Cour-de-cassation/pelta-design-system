@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Drawer as MuiDrawer, makeStyles } from "@material-ui/core";
+import { Drawer as MuiDrawer } from "@material-ui/core";
 import { customThemeType, heights, useCustomTheme } from "../../theme";
 import { wordings } from "../../wordings";
 import { IconButton, Text } from "..";
@@ -16,12 +16,10 @@ function Drawer(props: {
 }) {
   const theme = useCustomTheme();
   const styles = buildStyles();
-  const classes = buildClasses(theme);
 
   return (
     <MuiDrawer
       style={styles.drawer}
-      classes={classes}
       anchor="right"
       open={props.isOpen}
       onClose={props.onClose}
@@ -79,15 +77,5 @@ function Drawer(props: {
         width: "100%",
       },
     } as const;
-  }
-
-  function buildClasses(theme: customThemeType) {
-    return makeStyles({
-      paper: {
-        boxShadow: theme.boxShadow.minor.out,
-        marginTop: heights.header,
-        height: heights.adminPanel,
-      },
-    })();
   }
 }

@@ -53,7 +53,7 @@ function TableRow(props) {
     const { onRowClick } = props;
     return (react_1.default.createElement(react_1.default.Fragment, null,
         !!optionItemSelection && (react_1.default.createElement(TableOptionItemSelectionPopUp_1.TableOptionItemSelectionPopUp, { dropdownLabel: optionItemSelection.dropdownLabel, description: optionItemSelection.description, items: optionItemSelection.items, onSelect: optionItemSelection.onSelect, onClose: () => setOptionItemSelection(undefined) })),
-        react_1.default.createElement("tr", { onMouseEnter: () => setIsHovered(true), onMouseLeave: () => setIsHovered(false), onClick: !!onRowClick ? onRowClick : undefined, style: styles.row },
+        react_1.default.createElement("tr", { onMouseEnter: () => setIsHovered(true), onMouseLeave: () => setIsHovered(false), onClick: onRowClick ? onRowClick : undefined, style: styles.row },
             formattedRow.map(({ content, style }) => (react_1.default.createElement("td", { style: style },
                 react_1.default.createElement(materialUI_1.Text, { weight: cellWeight, color: cellColor, variant: "h3" }, content)))),
             react_1.default.createElement("td", { style: props.optionCellStyle }, renderOptionButton()))));
@@ -100,7 +100,7 @@ function TableRow(props) {
         });
     }
     function buildStyles(theme) {
-        const cursor = !!props.onRowClick ? "pointer" : "default";
+        const cursor = props.onRowClick ? "pointer" : "default";
         const backgroundColor = isHovered
             ? theme.colors.default.background
             : undefined;
