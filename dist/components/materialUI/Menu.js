@@ -5,7 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Menu = void 0;
 const react_1 = __importDefault(require("react"));
-const core_1 = require("@material-ui/core");
+const material_1 = require("@mui/material");
+const styles_1 = require("@mui/styles");
 const theme_1 = require("../../theme");
 function Menu(props) {
     const theme = (0, theme_1.useCustomTheme)();
@@ -18,9 +19,9 @@ function Menu(props) {
             vertical: oppositePosition(props.dropdownPosition),
         },
     };
-    return (react_1.default.createElement(core_1.Menu, { anchorEl: props.anchorElement, anchorOrigin: dropdownMenuConfiguration === null || dropdownMenuConfiguration === void 0 ? void 0 : dropdownMenuConfiguration.anchorOrigin, classes: menuClasses, getContentAnchorEl: null, onClose: onClose, open: isOpen(), transformOrigin: dropdownMenuConfiguration.transformOrigin }, props.items.map(({ value, element, isDisabled }, ind) => (react_1.default.createElement(core_1.MenuItem, { disabled: isDisabled, classes: menuItemClasses, key: ind, value: value, onClick: (event) => handleSelection(event, value) }, element)))));
+    return (react_1.default.createElement(material_1.Menu, { anchorEl: props.anchorElement, anchorOrigin: dropdownMenuConfiguration === null || dropdownMenuConfiguration === void 0 ? void 0 : dropdownMenuConfiguration.anchorOrigin, classes: menuClasses, onClose: onClose, open: isOpen(), transformOrigin: dropdownMenuConfiguration.transformOrigin }, props.items.map(({ value, element, isDisabled }, ind) => (react_1.default.createElement(material_1.MenuItem, { disabled: isDisabled, classes: menuItemClasses, key: ind, value: value, onClick: (event) => handleSelection(event, value) }, element)))));
     function buildMenuClasses(theme) {
-        return (0, core_1.makeStyles)({
+        return (0, styles_1.makeStyles)({
             paper: {
                 backgroundColor: theme.colors.background,
                 maxHeight: "300px",
@@ -29,7 +30,7 @@ function Menu(props) {
         })();
     }
     function buildMenuItemClasses(theme) {
-        return (0, core_1.makeStyles)({
+        return (0, styles_1.makeStyles)({
             root: {
                 borderRadius: theme.shape.borderRadius.m,
                 margin: theme.spacing,

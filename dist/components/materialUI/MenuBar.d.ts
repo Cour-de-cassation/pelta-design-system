@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { PropTypes } from "@material-ui/core";
+import { PropTypes } from "@mui/material";
 export { MenuBar };
 declare function MenuBar(props: {
     children: ReactNode;

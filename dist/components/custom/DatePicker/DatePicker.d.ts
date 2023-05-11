@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { rectPositionType } from "../../../theme";
 import { dateType } from "./DatePickerTooltip";
 export { DatePicker };

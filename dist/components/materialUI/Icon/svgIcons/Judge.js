@@ -5,11 +5,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Judge = void 0;
 const react_1 = __importDefault(require("react"));
-const core_1 = require("@material-ui/core");
+const material_1 = require("@mui/material");
 const DEFAULT_SIZE = 24;
 function Judge(props) {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
-    return (react_1.default.createElement(core_1.SvgIcon, { style: props.style },
+    return (react_1.default.createElement(material_1.SvgIcon, { style: props.style },
         react_1.default.createElement("svg", { width: ((_a = props.style) === null || _a === void 0 ? void 0 : _a.width) || DEFAULT_SIZE, height: ((_b = props.style) === null || _b === void 0 ? void 0 : _b.height) || DEFAULT_SIZE, viewBox: `0 0 ${((_c = props.style) === null || _c === void 0 ? void 0 : _c.height) || DEFAULT_SIZE} ${((_d = props.style) === null || _d === void 0 ? void 0 : _d.width) || DEFAULT_SIZE}`, fill: "none", xmlns: "http://www.w3.org/2000/svg" },
             react_1.default.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M8 21C8 20.4477 8.44772 20 9 20H15C15.5523 20 16 20.4477 16 21C16 21.5523 15.5523 22 15 22H9C8.44772 22 8 21.5523 8 21Z", fill: (_e = props.style) === null || _e === void 0 ? void 0 : _e.color }),
             react_1.default.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M13 4V21H11V4H13Z", fill: (_f = props.style) === null || _f === void 0 ? void 0 : _f.color }),

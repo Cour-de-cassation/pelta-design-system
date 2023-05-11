@@ -3,8 +3,10 @@ import {
   Accordion as MuiAccordion,
   AccordionDetails,
   AccordionSummary,
+} from "@mui/material";
+import {
   makeStyles,
-} from "@material-ui/core";
+} from "@mui/styles";
 import { customThemeType, useCustomTheme } from "../../theme";
 
 export { Accordion };

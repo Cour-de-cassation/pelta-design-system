@@ -24,15 +24,15 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Checkbox = void 0;
-const core_1 = require("@material-ui/core");
+const material_1 = require("@mui/material");
 const react_1 = __importStar(require("react"));
 function Checkbox(props) {
     const [checked, setChecked] = (0, react_1.useState)(props.defaultChecked);
     if (props.text) {
-        return (react_1.default.createElement(core_1.FormControlLabel, { control: react_1.default.createElement(core_1.Checkbox, { checked: checked }), label: props.text, onChange: handleChange, style: props.style }));
+        return (react_1.default.createElement(material_1.FormControlLabel, { control: react_1.default.createElement(material_1.Checkbox, { checked: checked }), label: props.text, onChange: handleChange, style: props.style }));
     }
     else {
-        return react_1.default.createElement(core_1.Checkbox, { checked: checked, onChange: handleChange, style: props.style });
+        return react_1.default.createElement(material_1.Checkbox, { checked: checked, onChange: handleChange, style: props.style });
     }
     function handleChange(event, checked) {
         setChecked(checked);

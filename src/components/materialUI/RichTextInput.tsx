@@ -1,5 +1,6 @@
 import React, { ChangeEvent, CSSProperties, ReactElement } from "react";
-import { makeStyles, TextField } from "@material-ui/core";
+import { TextField } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import { customThemeType, useCustomTheme } from "../../theme";
 
 export { RichTextInput };

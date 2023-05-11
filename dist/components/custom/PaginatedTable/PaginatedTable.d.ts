@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { optionItemType, tableRowFieldType } from "../Table";
 import { footerCellType } from "../Table/TableFooter";
 import { orderDirectionType } from "../Table/TableHeader";
