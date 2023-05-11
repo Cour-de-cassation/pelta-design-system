@@ -4,6 +4,7 @@ import { Drawer } from './Drawer';
 import { Icon, iconNameType } from './Icon';
 import { Menu } from './Menu';
 import { MenuBar } from './MenuBar';
+import { Pagination } from './Pagination';
 import { RadioButton } from './RadioButton';
 import { RichTextInput } from './RichTextInput';
 import { Snackbar, snackbarVariantType } from './Snackbar';
@@ -20,6 +21,7 @@ export {
   Icon,
   Menu,
   MenuBar,
+  Pagination,
   RadioButton,
   RichTextInput,
   Snackbar,

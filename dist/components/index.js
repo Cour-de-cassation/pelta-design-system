@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TooltipMenu = exports.Tooltip = exports.TextInput = exports.Text = exports.TableSortLabel = exports.Table = exports.SwitchButton = exports.SvgImage = exports.Snackbar = exports.RichTextInput = exports.RefreshButton = exports.RadioButton = exports.PaginatedTable = exports.PopUp = exports.MenuBar = exports.LoginForm = exports.Loader = exports.LabelledDropdown = exports.IconDropdown = exports.IconButton = exports.Icon = exports.Header = exports.FloatingTooltipMenu = exports.Dropdown = exports.Drawer = exports.DatePicker = exports.ConfirmationPopup = exports.ComponentsList = exports.CircleIcon = exports.Checkbox = exports.ButtonWithIcon = exports.Accordion = void 0;
+exports.TooltipMenu = exports.Tooltip = exports.TextInput = exports.Text = exports.TableSortLabel = exports.Table = exports.SwitchButton = exports.SvgImage = exports.Snackbar = exports.RichTextInput = exports.RefreshButton = exports.RadioButton = exports.PaginatedTable = exports.PopUp = exports.Pagination = exports.MenuBar = exports.LoginForm = exports.Loader = exports.LabelledDropdown = exports.IconDropdown = exports.IconButton = exports.Icon = exports.Header = exports.FloatingTooltipMenu = exports.Dropdown = exports.Drawer = exports.DatePicker = exports.ConfirmationPopup = exports.ComponentsList = exports.CircleIcon = exports.Checkbox = exports.ButtonWithIcon = exports.Accordion = void 0;
 const custom_1 = require("./custom");
 Object.defineProperty(exports, "ButtonWithIcon", { enumerable: true, get: function () { return custom_1.ButtonWithIcon; } });
 Object.defineProperty(exports, "CircleIcon", { enumerable: true, get: function () { return custom_1.CircleIcon; } });
@@ -27,6 +27,7 @@ Object.defineProperty(exports, "Checkbox", { enumerable: true, get: function () 
 Object.defineProperty(exports, "Drawer", { enumerable: true, get: function () { return materialUI_1.Drawer; } });
 Object.defineProperty(exports, "Icon", { enumerable: true, get: function () { return materialUI_1.Icon; } });
 Object.defineProperty(exports, "MenuBar", { enumerable: true, get: function () { return materialUI_1.MenuBar; } });
+Object.defineProperty(exports, "Pagination", { enumerable: true, get: function () { return materialUI_1.Pagination; } });
 Object.defineProperty(exports, "RadioButton", { enumerable: true, get: function () { return materialUI_1.RadioButton; } });
 Object.defineProperty(exports, "Snackbar", { enumerable: true, get: function () { return materialUI_1.Snackbar; } });
 Object.defineProperty(exports, "SvgImage", { enumerable: true, get: function () { return materialUI_1.SvgImage; } });
