@@ -6,14 +6,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Accordion = void 0;
 const react_1 = __importDefault(require("react"));
 const material_1 = require("@mui/material");
-const styles_1 = require("@mui/styles");
 const theme_1 = require("../../theme");
 function Accordion(props) {
     const theme = (0, theme_1.useCustomTheme)();
     const accordionClasses = buildAccordionClasses(theme);
     const accordionHeaderClasses = buildAccordionHeaderClasses();
-    return (react_1.default.createElement(material_1.Accordion, { classes: accordionClasses, onChange: (_event, expanded) => props.onChange(expanded), style: props.style },
-        react_1.default.createElement(material_1.AccordionSummary, { classes: {
+    return (react_1.default.createElement(material_1.Accordion, { sx: accordionClasses, onChange: (_event, expanded) => props.onChange(expanded), style: props.style },
+        react_1.default.createElement(material_1.AccordionSummary, { sx: {
                 content: accordionHeaderClasses.content,
                 expanded: accordionHeaderClasses.expanded,
             }, style: props.headerStyle }, props.header),
@@ -21,7 +20,7 @@ function Accordion(props) {
 }
 exports.Accordion = Accordion;
 function buildAccordionClasses(theme) {
-    return (0, styles_1.makeStyles)({
+    return {
         rounded: {
             backgroundColor: theme.colors.default.background,
             borderRadius: theme.shape.borderRadius.m,
@@ -32,10 +31,10 @@ function buildAccordionClasses(theme) {
                 borderRadius: theme.shape.borderRadius.m,
             },
         },
-    })();
+    };
 }
 function buildAccordionHeaderClasses() {
-    return (0, styles_1.makeStyles)({
+    return {
         content: {
             margin: 0,
             "&$expanded": {
@@ -43,6 +42,6 @@ function buildAccordionHeaderClasses() {
             },
         },
         expanded: {},
-    })();
+    };
 }
 //# sourceMappingURL=Accordion.js.map

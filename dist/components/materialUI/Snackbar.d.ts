@@ -1,3 +1,4 @@
+import React from "react";
 export { Snackbar };
 export type { snackbarVariantType };
 type snackbarVariantType = "success" | "alert" | "info";
@@ -7,4 +8,4 @@ declare function Snackbar(props: {
     isOpen: boolean;
     onClose: () => void;
     autoHide: boolean;
-}): JSX.Element;
+}): React.JSX.Element;

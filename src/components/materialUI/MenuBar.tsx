@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 import { AppBar, PropTypes } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import { zIndices } from "./constants";
 import { customThemeType, useCustomTheme } from "../../theme";
 
@@ -16,7 +15,7 @@ function MenuBar(props: {
   const classes = buildClasses(theme, props.isElevated);
   return (
     <AppBar
-      classes={classes}
+      sx={classes}
       position="relative"
       style={styles.appBar}
       color={props.color}
@@ -35,9 +34,9 @@ function MenuBar(props: {
 }
 
 function buildClasses(theme: customThemeType, isElevated: boolean) {
-  return makeStyles({
+  return {
     root: {
       boxShadow: isElevated ? theme.boxShadow.major.out : "none",
     },
-  })();
+  };
 }

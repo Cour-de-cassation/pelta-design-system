@@ -1,4 +1,4 @@
-import { MouseEvent, ReactElement } from "react";
+import React, { MouseEvent, ReactElement } from "react";
 export { DropdownButton };
 declare function DropdownButton<T extends string>(props: {
     error?: boolean;
@@ -13,4 +13,4 @@ declare function DropdownButton<T extends string>(props: {
     labelIcon?: ReactElement;
     onClick: (event: MouseEvent) => void;
     width?: number;
-}): JSX.Element;
+}): React.JSX.Element;

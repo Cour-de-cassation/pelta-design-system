@@ -1,3 +1,4 @@
+import React from "react";
 import { optionItemType, tableRowFieldType } from "../Table";
 import { footerCellType } from "../Table/TableFooter";
 import { orderDirectionType } from "../Table/TableHeader";
@@ -11,4 +12,4 @@ declare function PaginatedTable<InputT, orderByPropertyT extends string = string
     onOrderDirectionChange?: (newOrderDirection: orderDirectionType) => void;
     buildOptionItems?: (data: InputT) => Array<optionItemType>;
     fields: Array<tableRowFieldType<InputT, orderByPropertyT>>;
-}): JSX.Element;
+}): React.JSX.Element;

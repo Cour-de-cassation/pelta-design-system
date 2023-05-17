@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import React, { ReactElement } from "react";
 export { TableFooter };
 export type { footerCellType };
 type footerCellType = {
@@ -7,4 +7,4 @@ type footerCellType = {
 };
 declare function TableFooter(props: {
     cells: Array<footerCellType>;
-}): JSX.Element;
+}): React.JSX.Element;

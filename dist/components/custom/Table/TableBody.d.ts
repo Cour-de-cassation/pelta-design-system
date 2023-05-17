@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import React, { CSSProperties } from "react";
 import { optionItemType } from "./Table";
 import { orderDirectionType } from "./TableHeader";
 export { TableBody };
@@ -28,4 +28,4 @@ declare function TableBody<InputT, orderByPropertyT extends string = string>(pro
         start: number;
         end: number;
     };
-}): JSX.Element;
+}): React.JSX.Element;

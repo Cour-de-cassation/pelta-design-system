@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { orderDirectionType } from '../custom';
 export { TableSortLabel };
 declare function TableSortLabel(props: {
@@ -6,4 +6,4 @@ declare function TableSortLabel(props: {
     children: ReactNode;
     direction: orderDirectionType;
     onClick: () => void;
-}): JSX.Element;
+}): React.JSX.Element;

@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import React, { CSSProperties } from "react";
 import { Judge, Scissors, Meditation } from "./svgIcons";
 export { Icon };
 export type { iconNameType };
@@ -240,4 +240,4 @@ declare function Icon(props: {
     iconName: iconNameType;
     hint?: string;
     style?: CSSProperties;
-}): JSX.Element;
+}): React.JSX.Element;

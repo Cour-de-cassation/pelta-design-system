@@ -1,3 +1,4 @@
+import React from "react";
 import { rectPositionType } from "../../../theme";
 import { dateType } from "./DatePickerTooltip";
 export { DatePicker };
@@ -9,4 +10,4 @@ declare function DatePicker(props: {
     label: string;
     width?: number;
     parentRectPosition?: rectPositionType;
-}): JSX.Element;
+}): React.JSX.Element;

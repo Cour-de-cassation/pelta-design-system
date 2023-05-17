@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import React, { CSSProperties } from "react";
 import { optionItemType, tableRowFieldType } from "./Table";
 export { TableRow };
 declare function TableRow<InputT>(props: {
@@ -9,4 +9,4 @@ declare function TableRow<InputT>(props: {
     onRowClick?: () => void;
     buildOptionItems?: (data: InputT) => Array<optionItemType>;
     optionCellStyle?: CSSProperties;
-}): JSX.Element;
+}): React.JSX.Element;
