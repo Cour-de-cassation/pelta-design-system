@@ -1,3 +1,4 @@
+import React from "react";
 import { iconNameType } from "../../materialUI";
 import { orderDirectionType } from "./TableHeader";
 import { tableRowFieldType } from "./TableBody";
@@ -36,4 +37,4 @@ declare function Table<InputT, orderByPropertyT extends string = string>(props: 
         end: number;
     };
     fields: Array<tableRowFieldType<InputT, orderByPropertyT>>;
-}): JSX.Element;
+}): React.JSX.Element;

@@ -1,3 +1,4 @@
+import React from "react";
 import { rectPositionType } from "../../../theme";
 export { DatePickerTooltip };
 export type { dateType };
@@ -12,4 +13,4 @@ declare function DatePickerTooltip(props: {
     onChange: (value: dateType) => void;
     rectPosition: rectPositionType;
     onClose: () => void;
-}): JSX.Element;
+}): React.JSX.Element;

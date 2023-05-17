@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import React, { ReactElement } from "react";
 export { OptionButton };
 declare function OptionButton<T extends string>(props: {
     items: Array<{
@@ -9,4 +9,4 @@ declare function OptionButton<T extends string>(props: {
     }>;
     onSelect: (value: T) => void;
     onClose?: () => void;
-}): JSX.Element;
+}): React.JSX.Element;

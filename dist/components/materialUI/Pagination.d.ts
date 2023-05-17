@@ -5,4 +5,4 @@ declare function Pagination(props: {
     disabled?: boolean;
     page?: number;
     onChange: (event: React.ChangeEvent<unknown>, page: number) => void;
-}): JSX.Element;
+}): React.JSX.Element;

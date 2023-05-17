@@ -1,3 +1,4 @@
+import React from "react";
 export { TableOptionItemSelectionPopUp };
 declare function TableOptionItemSelectionPopUp(props: {
     description: string;
@@ -5,4 +6,4 @@ declare function TableOptionItemSelectionPopUp(props: {
     items: Array<string>;
     onSelect: (value: string) => void;
     onClose: () => void;
-}): JSX.Element;
+}): React.JSX.Element;

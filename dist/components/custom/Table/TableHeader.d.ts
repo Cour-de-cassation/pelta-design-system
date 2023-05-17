@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import React, { CSSProperties } from "react";
 export { TableHeader, DEFAULT_ORDER_DIRECTION };
 export type { orderDirectionType };
 type orderDirectionType = "asc" | "desc";
@@ -17,4 +17,4 @@ declare function TableHeader<orderByPropertyT extends string = string>(props: {
     orderDirection: orderDirectionType;
     setOrderDirection: (orderDirection: orderDirectionType) => void;
     setOrderByProperty: (orderByProperty: orderByPropertyT) => void;
-}): JSX.Element;
+}): React.JSX.Element;

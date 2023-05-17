@@ -1,5 +1,5 @@
-import { CSSProperties } from 'react';
+import React, { CSSProperties } from 'react';
 export { Judge };
 declare function Judge(props: {
     style?: CSSProperties;
-}): JSX.Element;
+}): React.JSX.Element;

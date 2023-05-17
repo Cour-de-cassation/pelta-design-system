@@ -1,6 +1,5 @@
 import React, { MouseEvent, ReactElement, ReactNode } from "react";
 import { Menu as MUMenu, MenuItem } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import { customThemeType, useCustomTheme } from "../../theme";
 
 export { Menu };
@@ -28,7 +27,7 @@ function Menu<T extends string>(props: {
     <MUMenu
       anchorEl={props.anchorElement}
       anchorOrigin={dropdownMenuConfiguration?.anchorOrigin}
-      classes={menuClasses}
+      sx={menuClasses}
       onClose={onClose}
       open={isOpen()}
       transformOrigin={dropdownMenuConfiguration.transformOrigin}
@@ -36,7 +35,7 @@ function Menu<T extends string>(props: {
       {props.items.map(({ value, element, isDisabled }, ind) => (
         <MenuItem
           disabled={isDisabled}
-          classes={menuItemClasses}
+          sx={menuItemClasses}
           key={ind}
           value={value}
           onClick={(event: MouseEvent) => handleSelection(event, value)}
@@ -48,17 +47,17 @@ function Menu<T extends string>(props: {
   );
 
   function buildMenuClasses(theme: customThemeType) {
-    return makeStyles({
+    return {
       paper: {
         backgroundColor: theme.colors.background,
         maxHeight: "300px",
         width: `${props.width}px`,
       },
-    })();
+    };
   }
 
   function buildMenuItemClasses(theme: customThemeType) {
-    return makeStyles({
+    return {
       root: {
         borderRadius: theme.shape.borderRadius.m,
         margin: theme.spacing,
@@ -68,7 +67,7 @@ function Menu<T extends string>(props: {
           color: theme.colors.default.hoveredTextColor,
         },
       },
-    })();
+    };
   }
 
   function isOpen() {

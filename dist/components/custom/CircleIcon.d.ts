@@ -1,3 +1,4 @@
+import React from "react";
 import { iconNameType } from "../materialUI";
 export { CircleIcon };
 declare function CircleIcon(props: {
@@ -6,4 +7,4 @@ declare function CircleIcon(props: {
     iconName: iconNameType;
     hint?: string;
     isDisabled?: boolean;
-}): JSX.Element;
+}): React.JSX.Element;

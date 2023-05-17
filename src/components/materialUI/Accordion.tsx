@@ -4,9 +4,6 @@ import {
   AccordionDetails,
   AccordionSummary,
 } from "@mui/material";
-import {
-  makeStyles,
-} from "@mui/styles";
 import { customThemeType, useCustomTheme } from "../../theme";
 
 export { Accordion };
@@ -24,12 +21,12 @@ function Accordion(props: {
 
   return (
     <MuiAccordion
-      classes={accordionClasses}
+      sx={accordionClasses}
       onChange={(_event, expanded) => props.onChange(expanded)}
       style={props.style}
     >
       <AccordionSummary
-        classes={{
+        sx={{
           content: accordionHeaderClasses.content,
           expanded: accordionHeaderClasses.expanded,
         }}
@@ -43,7 +40,7 @@ function Accordion(props: {
 }
 
 function buildAccordionClasses(theme: customThemeType) {
-  return makeStyles({
+  return {
     rounded: {
       backgroundColor: theme.colors.default.background,
       borderRadius: theme.shape.borderRadius.m,
@@ -54,11 +51,11 @@ function buildAccordionClasses(theme: customThemeType) {
         borderRadius: theme.shape.borderRadius.m,
       },
     },
-  })();
+  };
 }
 
 function buildAccordionHeaderClasses() {
-  return makeStyles({
+  return {
     content: {
       margin: 0,
       "&$expanded": {
@@ -66,5 +63,5 @@ function buildAccordionHeaderClasses() {
       },
     },
     expanded: {},
-  })();
+  };
 }

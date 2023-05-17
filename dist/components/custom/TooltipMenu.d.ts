@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import React, { ReactElement } from "react";
 import { rectPositionType } from "../../theme";
 export { TooltipMenu };
 declare function TooltipMenu(props: {
@@ -7,4 +7,4 @@ declare function TooltipMenu(props: {
     shouldCloseWhenClickedAway: boolean;
     rectPosition: rectPositionType;
     width: number;
-}): JSX.Element;
+}): React.JSX.Element;

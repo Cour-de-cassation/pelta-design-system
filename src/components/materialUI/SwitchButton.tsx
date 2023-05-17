@@ -1,6 +1,5 @@
 import React, { ChangeEvent, ReactElement } from "react";
 import { Switch as MUSwitch } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import { customThemeType, useCustomTheme } from "../../theme";
 
 export { SwitchButton };
@@ -18,14 +17,14 @@ function SwitchButton(props: {
     <MUSwitch
       disabled={props.disabled}
       checked={props.checked}
-      classes={{ ...classes }}
+      sx={{ ...classes }}
       color={props.color}
       onChange={props.onChange}
     />
   );
 
   function buildSwitchButtonClasses(theme: customThemeType) {
-    return makeStyles({
+    return {
       root: {
         width: 50,
         height: 30,
@@ -51,6 +50,6 @@ function SwitchButton(props: {
       track: {
         backgroundColor: theme.colors.background,
       },
-    })();
+    };
   }
 }

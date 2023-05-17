@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 export { Drawer };
 declare function Drawer(props: {
     children?: ReactNode;
@@ -6,4 +6,4 @@ declare function Drawer(props: {
     title: string;
     isOpen: boolean;
     onClose: () => void;
-}): JSX.Element;
+}): React.JSX.Element;
