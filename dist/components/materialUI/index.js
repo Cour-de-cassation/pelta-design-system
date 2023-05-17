@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Tooltip = exports.Text = exports.TableSortLabel = exports.SwitchButton = exports.SvgImage = exports.Snackbar = exports.RichTextInput = exports.RadioButton = exports.MenuBar = exports.Menu = exports.Icon = exports.Drawer = exports.Checkbox = exports.Accordion = void 0;
+exports.Tooltip = exports.Text = exports.TableSortLabel = exports.SwitchButton = exports.SvgImage = exports.Snackbar = exports.RichTextInput = exports.RadioButton = exports.Pagination = exports.MenuBar = exports.Menu = exports.Icon = exports.Drawer = exports.Checkbox = exports.Accordion = void 0;
 const Accordion_1 = require("./Accordion");
 Object.defineProperty(exports, "Accordion", { enumerable: true, get: function () { return Accordion_1.Accordion; } });
 const Checkbox_1 = require("./Checkbox");
@@ -13,6 +13,8 @@ const Menu_1 = require("./Menu");
 Object.defineProperty(exports, "Menu", { enumerable: true, get: function () { return Menu_1.Menu; } });
 const MenuBar_1 = require("./MenuBar");
 Object.defineProperty(exports, "MenuBar", { enumerable: true, get: function () { return MenuBar_1.MenuBar; } });
+const Pagination_1 = require("./Pagination");
+Object.defineProperty(exports, "Pagination", { enumerable: true, get: function () { return Pagination_1.Pagination; } });
 const RadioButton_1 = require("./RadioButton");
 Object.defineProperty(exports, "RadioButton", { enumerable: true, get: function () { return RadioButton_1.RadioButton; } });
 const RichTextInput_1 = require("./RichTextInput");
