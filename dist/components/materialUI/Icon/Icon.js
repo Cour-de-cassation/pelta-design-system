@@ -19,6 +19,7 @@ const materialIconMapping = {
     assignment: icons_1.AssignmentIndRounded,
     bank: icons_1.AccountBalanceRounded,
     book: icons_1.BookRounded,
+    assignmentList: icons_1.AssignmentRounded,
     bug: icons_1.BugReportRounded,
     cake: icons_1.CakeRounded,
     car: icons_1.DirectionsCarRounded,
