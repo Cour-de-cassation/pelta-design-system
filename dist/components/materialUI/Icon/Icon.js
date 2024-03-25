@@ -41,6 +41,7 @@ const materialIconMapping = {
     email: icons_1.EmailRounded,
     error: icons_1.ErrorRounded,
     eye: icons_1.VisibilityRounded,
+    eyeoff: icons_1.VisibilityOffRounded,
     export: icons_1.GetAppRounded,
     find: icons_1.FindInPageRounded,
     forbidden: icons_1.BlockRounded,

@@ -74,6 +74,7 @@ import {
   UndoRounded,
   UpdateRounded,
   VisibilityRounded,
+  VisibilityOffRounded,
   VpnKeyRounded,
 } from "@material-ui/icons";
 import { Tooltip } from "../Tooltip";
@@ -116,6 +117,7 @@ const materialIconMapping = {
   email: EmailRounded,
   error: ErrorRounded,
   eye: VisibilityRounded,
+  eyeoff: VisibilityOffRounded,
   export: GetAppRounded,
   find: FindInPageRounded,
   forbidden: BlockRounded,
