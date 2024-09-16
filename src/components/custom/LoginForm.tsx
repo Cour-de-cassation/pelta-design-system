@@ -1,16 +1,23 @@
-import React, { FormEvent, useState } from 'react';
-import { wordings } from '../../wordings';
-import { customThemeType, useCustomTheme } from '../../theme';
-import { RichTextInput, Text } from '../materialUI';
-import { ButtonWithIcon } from './ButtonWithIcon';
+"use client";
+import React, { FormEvent, useState } from "react";
+import { wordings } from "../../wordings";
+import { customThemeType, useCustomTheme } from "../../theme";
+import { RichTextInput, Text } from "../materialUI";
+import { ButtonWithIcon } from "./ButtonWithIcon";
 
 export { LoginForm };
 
 function LoginForm(props: {
-  handleSubmit: ({ email, password }: { email: string; password: string }) => Promise<void>;
+  handleSubmit: ({
+    email,
+    password,
+  }: {
+    email: string;
+    password: string;
+  }) => Promise<void>;
 }) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [isFormValid, setIsFormValid] = useState(true);
   const theme = useCustomTheme();
   const styles = buildStyles(theme);
@@ -40,15 +47,19 @@ function LoginForm(props: {
         />
       </div>
       <div style={styles.forgottenPasswordContainer}>
-        <Text style={styles.forgottenPasswordText} variant="h3" color="textPrimary">
+        <Text
+          style={styles.forgottenPasswordText}
+          variant="h3"
+          color="textPrimary"
+        >
           {wordings.loginForm.forgottenPassword}
         </Text>
       </div>
       <div style={styles.loginButtonContainer}>
         <ButtonWithIcon
-          iconName={isFormValid ? 'login' : 'error'}
+          iconName={isFormValid ? "login" : "error"}
           onClick={handleSubmit}
-          color={isFormValid ? 'primary' : 'alert'}
+          color={isFormValid ? "primary" : "alert"}
           text={wordings.loginForm.login}
           type="submit"
         />
@@ -111,7 +122,7 @@ function buildStyles(theme: customThemeType) {
       marginBottom: theme.spacing * 3,
     },
     input: {
-      display: 'flex',
+      display: "flex",
     },
     forgottenPasswordContainer: {
       marginBottom: theme.spacing * 3,
@@ -120,20 +131,20 @@ function buildStyles(theme: customThemeType) {
       color: theme.colors.disabled.color,
     },
     loginButtonContainer: {
-      display: 'flex',
-      justifyContent: 'flex-end',
+      display: "flex",
+      justifyContent: "flex-end",
       marginBottom: theme.spacing,
     },
     formErrorText: {
       lineHeight: `${ERROR_LINE_HEIGHT}px`,
-      textAlign: 'right',
+      textAlign: "right",
     },
     errorContainer: {
       height: `${2 * ERROR_LINE_HEIGHT}px`,
     },
     invalidErrorContainer: {
-      display: 'flex',
-      flexDirection: 'column',
+      display: "flex",
+      flexDirection: "column",
     },
   } as const;
 }
