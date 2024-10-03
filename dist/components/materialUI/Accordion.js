@@ -11,7 +11,7 @@ function Accordion(props) {
     const theme = (0, theme_1.useCustomTheme)();
     const accordionClasses = buildAccordionClasses(theme);
     const accordionHeaderClasses = buildAccordionHeaderClasses();
-    return (react_1.default.createElement(core_1.Accordion, { classes: accordionClasses, onChange: (_event, expanded) => props.onChange(expanded), style: props.style },
+    return (react_1.default.createElement(core_1.Accordion, { classes: accordionClasses, onChange: (_event, expanded) => props.onChange(expanded), style: props.style, defaultExpanded: props.defaultExpanded },
         react_1.default.createElement(core_1.AccordionSummary, { classes: {
                 content: accordionHeaderClasses.content,
                 expanded: accordionHeaderClasses.expanded,

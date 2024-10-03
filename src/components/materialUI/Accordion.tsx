@@ -15,6 +15,7 @@ function Accordion(props: {
   body: ReactElement;
   onChange: (expanded: boolean) => void;
   style?: CSSProperties;
+  defaultExpanded?: boolean;
 }): ReactElement {
   const theme = useCustomTheme();
   const accordionClasses = buildAccordionClasses(theme);
@@ -25,6 +26,7 @@ function Accordion(props: {
       classes={accordionClasses}
       onChange={(_event, expanded) => props.onChange(expanded)}
       style={props.style}
+      defaultExpanded={props.defaultExpanded}
     >
       <AccordionSummary
         classes={{

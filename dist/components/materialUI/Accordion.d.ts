@@ -6,4 +6,5 @@ declare function Accordion(props: {
     body: ReactElement;
     onChange: (expanded: boolean) => void;
     style?: CSSProperties;
+    defaultExpanded?: boolean;
 }): ReactElement;
