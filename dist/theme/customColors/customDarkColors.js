@@ -5,6 +5,7 @@ const primaryColors_1 = require("./primaryColors");
 const customDarkColors = {
     alert: ['red', '500'],
     background: ['grey', '900'],
+    checklist: ['grey', '700'],
     badge: {
         type1: { backgroundColor: 'white', color: ['grey', '900'] },
     },

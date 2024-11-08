@@ -5,6 +5,7 @@ export type { customColorsType };
 type customColorsType = {
   alert: shadeColorType;
   background: colorType;
+  checklist: colorType;
   badge: {
     type1: {
       backgroundColor: colorType;
