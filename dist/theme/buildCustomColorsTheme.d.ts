@@ -9,6 +9,7 @@ declare function buildCustomColorsTheme(displayMode: displayModeType): {
         hoveredTextColor: string;
     };
     background: string;
+    checklist: string;
     badge: {
         type1: {
             backgroundColor: string;

@@ -14,6 +14,7 @@ function buildCustomColorsTheme(displayMode: displayModeType) {
   return {
     alert: buildCustomColorsVariations(customColorsMode.alert),
     background: getColor(customColorsMode.background),
+    checklist: getColor(customColorsMode.checklist),
     badge: {
       type1: {
         backgroundColor: getColor(customColorsMode.badge.type1.backgroundColor),

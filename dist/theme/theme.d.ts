@@ -94,6 +94,7 @@ declare function useCustomTheme(): {
             hoveredTextColor: string;
         };
         background: string;
+        checklist: string;
         badge: {
             type1: {
                 backgroundColor: string;
@@ -227,6 +228,7 @@ declare function buildCustomTheme(displayMode: displayModeType): {
             hoveredTextColor: string;
         };
         background: string;
+        checklist: string;
         badge: {
             type1: {
                 backgroundColor: string;

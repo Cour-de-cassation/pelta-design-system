@@ -8,6 +8,7 @@ function buildCustomColorsTheme(displayMode) {
     return {
         alert: buildCustomColorsVariations(customColorsMode.alert),
         background: (0, palette_1.getColor)(customColorsMode.background),
+        checklist: (0, palette_1.getColor)(customColorsMode.checklist),
         badge: {
             type1: {
                 backgroundColor: (0, palette_1.getColor)(customColorsMode.badge.type1.backgroundColor),
